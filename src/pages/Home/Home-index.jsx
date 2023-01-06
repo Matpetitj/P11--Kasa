@@ -1,21 +1,13 @@
-import '../../styles/App.css';
+import '../../Utils/style-page/Home.css';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="Home">
+      <header className="Home-header">
         <h1>Kasa</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
 }
 
-export default App;
+export default Home;

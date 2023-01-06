@@ -1,7 +1,9 @@
+import ErrorPage from '../../components/Error/Error-index';
+
 function Error() {
     return (
       <div>
-        <h1>Oups 🙈 Cette page n'existe pas</h1>
+        <ErrorPage />
       </div>
     )
   }
