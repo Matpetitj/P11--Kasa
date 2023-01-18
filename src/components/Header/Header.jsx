@@ -1,21 +1,22 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components'
-
-const NavContainer = styled.nav`
-
-`
+import logo from "../../assets/Images/LOGO.svg";
+// import styled from 'styled-components'
 
 function Header() {
     return (
-      <NavContainer>
-        <Link to="/">
-          {/* <HomeLogo /> */}
-        </Link>
-        <div>
-          <Link to="/">Accueil</Link>
-          <Link to="../pages/About/About-index">A propos</Link>
-        </div>
-      </NavContainer>
+      <header class="header_group">
+        <figure className="header_group_figure">
+          <img className="logo" src={logo} alt="Logo de l'agence Kasa"></img>
+        </figure>
+        <nav className="nav-header">
+          <Link to="/" className="nav-header_link-home">
+            Accueil
+          </Link>
+          <Link to="/about" className="nav-header_link-about">
+            A Propos
+          </Link>
+        </nav>
+      </header>
     )
   }
 

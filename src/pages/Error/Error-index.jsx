@@ -1,9 +1,9 @@
-import ErrorPage from '../../components/Error/Error-index';
+import ErrorComponent from '../../components/Error/Error-index';
 
 function Error() {
     return (
       <div>
-        <ErrorPage />
+        <ErrorComponent />
       </div>
     )
   }

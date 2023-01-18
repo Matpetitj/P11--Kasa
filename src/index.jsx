@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import './Utils/style-page/index.css';
 import Home from './pages/Home/Home-index';
@@ -11,31 +11,25 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     * {
-     
+     font-family: Montserrat, Helvetica, sans-serif;
+     weight: 500,
     }
 `
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
+    <GlobalStyle />
     <Router>
-      <GlobalStyle />
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>   
-        <Route path="/accomodation">
-          <Accomodation />
-        </Route>
-        <Route path ="about">
-          <About />
-        </Route>
-        <Route>
-          <Error />
-        </Route>
-      </Switch>
+      <Routes>
+      <Route path="/" element={<Home />} />  
+        <Route path="/accomodation" element={<Accomodation />} />
+        <Route path ="/about" element={<About />} />
+        <Route path = "*" element={<Error />} />
+      </Routes>
+      {/* Footer */}
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  // document.getElementById('root')
 );
