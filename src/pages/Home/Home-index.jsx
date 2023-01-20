@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 export default function Home() {
 	return (
 		<>
-			<Banner img={} />
+			<Banner img={bannerImg} />
 			<div className="cards-container">
 				{accomodations.map((appart, id) => (
 					<div className="card_accomodation" key={id}>

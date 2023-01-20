@@ -11,3 +11,6 @@ export default function Banner({img}) {
 
 //rajouter props le texte
 //if pour l'afficher ou non
+//faire un seul fichier bannière pour les deux bannières*
+//décider l'affichage dans le html
+// est-ce possible de mettre un if dans le code html jsx
