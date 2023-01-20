@@ -12,7 +12,6 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
     * {
      font-family: Montserrat, Helvetica, sans-serif;
-     weight: 500,
     }
 `
 

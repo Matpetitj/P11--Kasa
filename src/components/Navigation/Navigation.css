@@ -1,0 +1,46 @@
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.nav-header a {
+    font-style: normal;
+    font-weight: 500;
+    text-align: right;
+    line-height: 142%;
+    color: #ff6060;
+    text-decoration: none;
+    padding-left: 0.8rem;
+}
+
+.nav-header a:hover {
+    text-decoration-line: underline;
+}
+
+.nav-header_to-home .nav-header_to-about {
+    font-style: normal;
+    font-weight: 500;
+    text-align: right;
+    line-height: 142%;
+    color: '#ff6060';
+    text-decoration: none;
+    padding-left: 0.8rem;
+}
+
+@media screen and (min-width: 769px){
+    .nav-header {
+        text-transform: none;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .nav-header a {
+        font-style: normal;
+        font-weight: 500;
+        text-align: right;
+        line-height: 142%;
+        padding-left:  3.5rem;
+    }
+}
