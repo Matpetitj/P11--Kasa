@@ -7,11 +7,13 @@ import Home from './pages/Home/Home-index';
 import Accomodation from './pages/Accomodation-Sheet/Accomodation-index';
 import About from './pages/About/About-index';
 import Error from './pages/Error/Error-index';
+import Footer from './components/Footer/Footer-index';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     * {
      font-family: Montserrat, Helvetica, sans-serif;
+     max-width: 1614px;
     }
 `
 
@@ -27,7 +29,7 @@ root.render(
         <Route path ="/about" element={<About />} />
         <Route path = "*" element={<Error />} />
       </Routes>
-      {/* Footer */}
+      <Footer />
     </Router>
   </React.StrictMode>,
   // document.getElementById('root')

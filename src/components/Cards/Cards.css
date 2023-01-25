@@ -7,13 +7,10 @@
     min-width: 335px;
 }
 
-.card_accomodation:hover {
-    box-shadow: rgba(255, 96, 96, 0.9) 0 0 22px 6px;
-}
+/* .card_accomodation:hover {
+    
+} */
 
-.card_accomodation:focus {
-    box-shadow: rgba(255, 96, 96, 0.9) 0 0 22px 6px;
-}
 
 #accomodation_img {
     display: flex;
@@ -27,11 +24,13 @@
     align-items: center;
     position: absolute;
     bottom: 0px;
-    /*background gradient*/
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
     width: 100%;
     height: 100%;
 }
+
+/* modifier le gradient et déplacer le titre */
 
 .card_accomodation_title {
     display: flex;

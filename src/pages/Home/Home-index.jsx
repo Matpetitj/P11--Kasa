@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 export default function Home() {
 	return (
 		<>
-			<Banner img={bannerImg} />
+			<Banner img={bannerImg} text="Chez vous, partout et ailleurs"/>
 			<div className="cards_accomodation_container">
 				{accomodations.map((appart, id) => (
 					<div className="card_accomodation" key={id}>
