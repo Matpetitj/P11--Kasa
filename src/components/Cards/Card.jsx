@@ -1,9 +1,11 @@
+import "./Cards.css";
+
 export default function Card({ cover, title, alt }) {
 	return (
-		<article className="card-logement">
-			<img src={cover} alt={alt} />
-			<div className="card-logement__layer">
-				<p className="card-logement__title">{title}</p>
+		<article className="card_accomodation">
+			<img src={cover} alt={alt} id="accomodation_img"/>
+			<div className="card_accomodation_style">
+				<p className="card_accomodation_title">{title}</p>
 			</div>
 		</article>
 	);

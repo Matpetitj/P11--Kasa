@@ -1,5 +1,6 @@
 import logo from "../../assets/Images/LOGO.svg";
 import Nav from "../Navigation/Navigation";
+import "./Header.css";
 // import styled from 'styled-components'
 
 function Header() {

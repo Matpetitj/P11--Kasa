@@ -1,0 +1,29 @@
+.header_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+.header_group_figure {
+    display: flex;
+    align-items: flex-start;
+    margin: 0px;
+    width: 50%;
+}
+
+.header_group_figure img {
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .header_group {
+        margin: 40 100 48 100;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .header_group_figure {
+        width: 13%;
+    }
+}

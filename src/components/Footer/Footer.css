@@ -1,0 +1,33 @@
+.footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+    flex-direction: column;
+    background-color: black;
+}
+
+.footer_container_text {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin: 4% 0 3% 0;
+}
+
+.footer_container img {
+    margin-top: 2%;
+    width: 122px;
+    height: 40px;
+}
+
+@media screen and (min-width: 769px) {
+    .footer_container_text {
+        font-size: 24px;
+    }
+}
