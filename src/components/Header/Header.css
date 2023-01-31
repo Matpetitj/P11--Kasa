@@ -1,4 +1,4 @@
-.header_group {
+/* .header_group {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,12 +8,12 @@
 .header_group_figure {
     display: flex;
     align-items: flex-start;
-    margin: 0px;
+    margin: 0;
     width: 50%;
 }
 
 .header_group_figure img {
-    width: 100%;
+    width: 130px;
 }
 
 @media screen and (min-width: 769px) {
@@ -26,4 +26,8 @@
     .header_group_figure {
         width: 13%;
     }
-}
+
+    .header_group_figure img {
+        width: 100%;
+    }
+} */

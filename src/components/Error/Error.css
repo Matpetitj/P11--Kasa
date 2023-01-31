@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 22px 6%;
+    /* color: #ff6060; */
 }
 
 .error_code {
@@ -31,7 +32,8 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 9rem;
+    margin-top: 9%;
+    /* color: #ff6060; */
 }
 
 .error_link_home:hover {

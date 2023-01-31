@@ -5,4 +5,5 @@ const colors = {
     footerColor: '#000000',
   }
   
-  export default colors
+export default colors
+  

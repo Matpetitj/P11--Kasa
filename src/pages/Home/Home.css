@@ -1,1 +1,48 @@
 
+/* .home_container {
+    max-width: 335px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.card_accomodation_title {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f1f1f1;
+    left: 5.88%;
+    right: 5.88%;
+    top: 78.82%;
+    bottom: 5.88%;
+}
+
+.cards_accomodation_container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0px 10px;
+    flex-wrap: wrap;
+}
+
+.card_accomodation_link {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+    .home_container {
+        max-width: 1240px;
+    }
+
+    .cards_accomodation_container {
+        gap: 50px;
+        padding: 5% 1%;
+        background-color: #f7f7f7;
+        border-radius: 25px;
+        margin: 43px 0px;
+    }
+} */

@@ -1,15 +1,18 @@
-.card_accomodation {
+/* .card_accomodation {
     position: relative;
     display: flex;
     width: 335px;
     height: 255px;
     border-radius: 10px;
     min-width: 335px;
+    margin-top: 20px;
 }
 
-/* .card_accomodation:hover {
-    
-} */
+.card_accomodation:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease 0.4s;
+}
 
 
 #accomodation_img {
@@ -32,46 +35,9 @@
 
 /* modifier le gradient et déplacer le titre */
 
-.card_accomodation_title {
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    font-size: 18px;
-    font-weight: 500;
-    color: #f1f1f1;
-    left: 5.88%;
-    right: 5.88%;
-    top: 78.82%;
-    bottom: 5.88%;
-}
-
-.cards_accomodation_container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
-    border-radius: 10px;
-    margin: 22 0;
-    flex-wrap: wrap;
-}
-
-.card_accomodation_link {
-    text-decoration: none;
-}
-
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px) {
     .card_accomodation {
         width: 340px;
         height: 340px;
     }
-}
-
-@media screen and (min-width: 769px) {
-    .cards_accomodation_container {
-        gap: 50px;
-        padding: 5% 1%;
-        background-color: #f7f7f7;
-        border-radius: 25px;
-        margin: 43 0;
-    }
-}
+} */
