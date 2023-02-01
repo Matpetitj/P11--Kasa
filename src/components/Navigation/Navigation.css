@@ -21,28 +21,27 @@
 }
 
 @media screen and (min-width: 769px){
-    .nav-header {
+    .nav_header {
         text-transform: none;
     }
-}
 
-@media screen and (min-width: 769px){
-    .nav-header a {
-        font-size: 24px;
+    .nav_header a {
+        font-size: 20px;
         font-weight: 500;
-        line-height: 142%;
-        padding-left:  3.5rem;
+        line-height: 34.22px;
+        padding-left: 30px;
+        text-align: right;
     }
 }
 
-/* .nav-header {
+/* .nav_çheader {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     text-transform: uppercase;
 }
 
-.nav-header a {
+.nav_header a {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -53,18 +52,18 @@
     padding-left: 0.8rem;
 }
 
-.nav-header a:hover {
+.na_header a:hover {
     text-decoration-line: underline;
 }
 
 @media screen and (min-width: 769px){
-    .nav-header {
+    .nav_header {
         text-transform: none;
     }
 }
 
 @media screen and (min-width: 769px){
-    .nav-header a {
+    .nav_header a {
         font-size: 24px;
         font-weight: 500;
         line-height: 142%;
