@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 22px 6%;
-    /* color: #ff6060; */
+    align-items: center;
+    margin: 22px 2%;
+    color: #ff6060;
 }
 
 .error_code {
@@ -12,28 +13,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12rem 0 1rem 0;
+    margin: 12rem 0 0.8rem 0;
 }
 
 .error_advertisement {
     display: flex;
-	align-items: flex-end;
-	justify-content: center;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
+    line-height: 25px;
     margin: 0 11%;
 }
 
 .error_link_home {
     display: flex;
-	align-items: flex-end;
 	justify-content: center;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 9%;
-    /* color: #ff6060; */
+    margin-top: 35%;
+    color: #ff6060;
 }
 
 .error_link_home:hover {
@@ -47,11 +46,18 @@
 @media screen and (min-width: 769px) {
     .error_code {
         font-size: 288px;
+        line-height: 410px;
         margin: 0;
     }
 
     .error_advertisement {
         font-size: 36px;
+        line-height: 51px;
         margin: 0;
+    }
+
+    .error_link_home {
+        margin-top: 7rem;
+        font-size: 18px;
     }
 }
