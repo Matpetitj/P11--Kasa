@@ -1,4 +1,5 @@
 import Arrow from "../../assets/Images/vectorBas.svg";
+import "../../components/CollapseEffect/CollapseEffect.css"
 
 export default function collapseEffect (ruleWord, ruleText) {
     return (
