@@ -9,7 +9,7 @@ function Header() {
         <figure className="header_group_figure">
           <img className="logo" src={logo} alt="Logo de l'agence Kasa"></img>
         </figure>
-        <Nav className="nav_header" />
+        <Nav/>
       </header>
     )
   }

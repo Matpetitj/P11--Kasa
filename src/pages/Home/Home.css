@@ -1,3 +1,36 @@
+.home_container {
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.cards_accomodation_container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1240px;
+    height: 100%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 769px) {
+    
+    .home_container {
+        max-width: 1240px;
+        margin-left: 12%;
+    }
+
+    .cards_accomodation_container {
+        max-width: 1240px;
+        gap: 60px;
+        padding: 50px 30px;
+        background-color: #f7f7f7;
+        border-radius: 25px;
+        margin: 43px 0px;
+    }
+}
 
 /* .home_container {
     max-width: 335px;
@@ -5,19 +38,6 @@
     justify-content: center;
     flex-direction: column;
     margin-left: 10px;
-}
-
-.card_accomodation_title {
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    font-size: 18px;
-    font-weight: 500;
-    color: #f1f1f1;
-    left: 5.88%;
-    right: 5.88%;
-    top: 78.82%;
-    bottom: 5.88%;
 }
 
 .cards_accomodation_container {

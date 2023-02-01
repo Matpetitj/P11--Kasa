@@ -1,3 +1,40 @@
+.nav_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.nav_header a {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    line-height: 142%;
+    color: #ff6060;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.nav_header a:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px){
+    .nav-header {
+        text-transform: none;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .nav-header a {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 142%;
+        padding-left:  3.5rem;
+    }
+}
+
 /* .nav-header {
     display: flex;
     align-items: center;
