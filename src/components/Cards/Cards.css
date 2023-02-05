@@ -37,7 +37,7 @@
     position: absolute;
     font-size: 18px;
     font-weight: 500;
-    color: #f1f1f1;
+    color: var(--secondary-color);
     left: 5.88%;
     right: 5.88%;
     top: 78.82%;

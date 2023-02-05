@@ -6,7 +6,7 @@
     height: 200px;
     margin-top: 1.5rem;
     flex-direction: column;
-    background-color: black;
+    background-color: var(--footer-color);
 }
 
 .footer_container_text {

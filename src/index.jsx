@@ -22,8 +22,7 @@ root.render(
   <React.StrictMode>
     <GlobalStyle />
         <Router>
-              <div style={{display: 'flex', flexDirection:'column', justifyContent:'space-between', minHeight:'100vh'}}>
-                {/*<ThemeSwitcher setTheme={setTheme} theme={theme}/>*/}
+              <div className="global_style">
                 <Header />
                 <Routes>
                 <Route path="/" element={<Home />} />  
