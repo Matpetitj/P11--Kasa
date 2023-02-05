@@ -4,7 +4,7 @@ import fullStar from "../../assets/Images/fullStar.svg";
 export default function Rate({ score }) {
 	const stars = [1, 2, 3, 4, 5];
 	return (
-		<div className="rate_contaienr">
+		<div className="rate_container">
 			{stars.map((level) =>
 				score >= level ? (
 					<img key={level.toString()} className="star" src={fullStar} alt="Etoile de notation"/>

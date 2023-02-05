@@ -1,7 +1,7 @@
 import Arrow from "../../assets/Images/vectorBas.svg";
 import "../../components/CollapseEffect/CollapseEffect.css"
 
-export default function collapseEffect (ruleWord, ruleText) {
+export default function collapseEffect ({ruleWord, ruleText}) {
     return (
         <div className="rules_container">
             <div className="rule">

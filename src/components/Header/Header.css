@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 20px 4% 20px 5%;
+    max-width: 1240px;
 }
 
 .header_group_figure {
@@ -21,7 +22,7 @@
 @media screen and (min-width: 769px) {
 
     .header_group {
-        margin: 40 100 48 100;
+        margin: 40px 90px 48px 95px;
     }
 
     .header_group_figure {

@@ -2,7 +2,7 @@
     max-width: 335px;
     display: flex;
     flex-direction: column;
-    margin-left: 4%;
+    margin-left: 3.5%;
 }
 
 .cards_accomodation_container {
@@ -19,7 +19,7 @@
     
     .home_container {
         max-width: 1240px;
-        margin-left: 12%;
+        margin-left: 5.5%;
     }
 
     .cards_accomodation_container {

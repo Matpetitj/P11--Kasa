@@ -10,7 +10,7 @@
     font-weight: 500;
     text-align: right;
     line-height: 142%;
-    color: #ff6060;
+    color: var(--primary-color);
     text-decoration: none;
     padding-left: 10px;
 }

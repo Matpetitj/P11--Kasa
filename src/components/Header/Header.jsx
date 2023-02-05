@@ -5,7 +5,7 @@ import "./Header.css";
 
 function Header() {
     return (
-      <header class="header_group">
+      <header className="header_group">
         <figure className="header_group_figure">
           <img className="logo" src={logo} alt="Logo de l'agence Kasa"></img>
         </figure>
