@@ -8,19 +8,10 @@ import Header from './components/Header/Header';
 import About from './pages/About/About-index';
 import Error from './pages/Error/Error-index';
 import Footer from './components/Footer/Footer-index';
-import { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-    * {
-     font-family: 'Montserrat', 'Helvetica', 'sans-serif';
-     max-width: 1440px;
-    }
-`
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
         <Router>
               <div className="global_style">
                 <Header />

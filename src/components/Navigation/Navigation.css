@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: flex-end;
     text-transform: uppercase;
+    margin-left: 2.5rem;
 }
 
 .nav_header a {
