@@ -11,8 +11,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     min-height: 100vh;
     max-width: 1440px;
     font-family: 'Montserrat', Helvetica, sans-serif;
+ }
+
+ @media screen and (min-width: 1441px) {
+   .global_style {
+      margin-left: 13%;
+   }
  }

@@ -27,28 +27,3 @@ root.render(
   </React.StrictMode>,
   // document.getElementById('root')
 );
-
-// {/* <Router>
-// <div style={{display: 'flex', flexDirection:'column'}}>
-//             {/*<ThemeSwitcher setTheme={setTheme} theme={theme}/>*/}
-//             <Header />
-//             <Routes>
-//             <Route path="/" element={<Home />} />  
-//               {/* <Route path="/accomodation" element={<Accomodation />} /> */}
-//               <Route path ="/about" element={<About />} />
-//               <Route path = "*" element={<Error />} />
-//             </Routes>
-//             <Footer />
-//         </div>
-// </Router> */}
-
-// {/* <Router>
-//       <Header />
-//       <Routes>
-//       <Route path="/" element={<Home />} />  
-//         {/* <Route path="/accomodation" element={<Accomodation />} /> */}
-//         <Route path ="/about" element={<About />} />
-//         <Route path = "*" element={<Error />} />
-//       </Routes>
-//       <Footer />
-//     </Router> */}
