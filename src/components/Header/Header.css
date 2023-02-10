@@ -1,7 +1,6 @@
 .header_group {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 20px 4% 20px 5%;
     max-width: 1240px;
 }

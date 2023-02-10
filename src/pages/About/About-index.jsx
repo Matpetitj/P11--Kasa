@@ -10,7 +10,7 @@ export default function About() {
 				{Rules.map((rule, id) => (
 					<CollapseEffect
 						key={id}
-						ruleWord={rule.ruleWord}
+						ruleTitle={rule.ruleTitle}
 						ruleText={rule.ruleText}
 					/>
 				))}
