@@ -1,22 +1,21 @@
-// import Arrow from "../../assets/Images/flecheBas.svg";
 import "../../components/CollapseEffect/CollapseEffect.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { fa-solid fa-chevron-up } from '@fortawesome/free-solid-svg-icons';
-
-// const arrow = <FontAwesomeIcon icon="fa-sharp fa-solid fa-chevron-up" />;
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function collapseEffect ({ruleTitle, ruleText}) {
+    //function callback onclick
+
+
     return (
         <div className="rules_container">
-            <div className="rule_title_container">
+            <div className="rule_title_container" onClick="">
                 <h2 className="rule_title">{ruleTitle}</h2>
-                {/* <span src={arrow} className="arrow"></span> */}
-                <p className="arrow">arrow</p>
+                <FontAwesomeIcon icon={ faChevronDown } className="chevron"/>
             </div>
-                
             <div className="rule_text_container">
                 <p className="rule_text">{ruleText}</p>
             </div>
         </div>
     );
 }
+

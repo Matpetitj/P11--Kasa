@@ -11,14 +11,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     min-height: 100vh;
+    min-width: 335px;
     max-width: 1440px;
     font-family: 'Montserrat', Helvetica, sans-serif;
+    padding: 6% 3%;
+ }
+
+ /* .home_container .banner_container {
+   width: 20px;
+ } */
+
+ @media screen and (min-width: 769px) {
+   .global_style {
+      padding: 4% 6%;
+   }
  }
 
  @media screen and (min-width: 1441px) {
    .global_style {
-      margin-left: 13%;
+      padding: 2% 17%;
    }
  }

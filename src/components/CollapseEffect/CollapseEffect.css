@@ -1,12 +1,10 @@
 .rules_container {
-    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 19px;
 }
 
 .rule_title_container {
-    position: absolute;
     display: flex;
     align-items: center;
     background-color: var(--primary-color);
@@ -17,18 +15,16 @@
 }
 
 .rule_title {
-    position: absolute;
     font-size: 13px;
     line-height: 18.54px;
     font-weight: 500;
     left: 11.50px;
     color: var(--tertiary-color);
+    z-index: 0;
 }
 
-.arrow {
-    position: absolute;
-    right: 14px;
-    color: var(--tertiary-color);
+.chevron path {
+    fill: var(--tertiary-color);
 }
 
 /* .arrow::before {
@@ -41,17 +37,17 @@
     transition: 0.4s ease-in-out;
 }
 
-/* .arrow:hover .rule_text_container {
-    opacity: 1;
-	transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
-} */
-
 .rule_text_container {
     background-color: var(--secondary-color);
-    margin-top: 20px;
     border-radius: 5px;
-    /* opacity: 0; */
+    opacity: 1;
 }
+
+/* .rule_text_container:hover {
+    opacity: 1;
+    animation: opacity 1s ease-in-out 0.4s infinite normal forwards;
+    transform: translateY(0px);
+} */
 
 .rule_text {
     color: var(--primary-color);

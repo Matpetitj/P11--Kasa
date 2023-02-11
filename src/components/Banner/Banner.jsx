@@ -2,6 +2,7 @@ import "./Banner.css";
 
 export default function Banner({img, text}) {
 	let textElement = "";
+	// let className = "size";
 	if(typeof text == "string"){
 		textElement = (<div className="banner_text_container">
 		<div className="banner_text">{text}</div>
@@ -9,7 +10,7 @@ export default function Banner({img, text}) {
 	}
 	return (
 		<div className="banner_container">
-            <img src={img} alt="Bannière de la page d'accueil" id="img_home_banner"></img>
+            <img src={img} id="img_banner" alt="Bannière de la page d'accueil"></img>
 			{textElement}
 		</div>
 	);

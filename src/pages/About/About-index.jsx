@@ -5,7 +5,7 @@ import Rules from "../../assets/Datas/rulesAbout.json";
 
 export default function About() {
 	return (
-			<div className = "home_container">
+			<div className = "about_container">
 				<Banner img={bannerImg}/>
 				{Rules.map((rule, id) => (
 					<CollapseEffect

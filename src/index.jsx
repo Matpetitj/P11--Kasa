@@ -22,7 +22,7 @@ root.render(
                   <Route path = "*" element={<Error />} />
                 </Routes>
                 <Footer />
-            </div>
+              </div>
     </Router>
   </React.StrictMode>,
   // document.getElementById('root')
