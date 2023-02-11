@@ -2,7 +2,6 @@ import "./Banner.css";
 
 export default function Banner({img, text}) {
 	let textElement = "";
-	// let className = "size";
 	if(typeof text == "string"){
 		textElement = (<div className="banner_text_container">
 		<div className="banner_text">{text}</div>
