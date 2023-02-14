@@ -4,6 +4,7 @@
     flex-direction: column;
     margin-top: 19px;
     background-color: var(--secondary-color);
+    max-height: 193px;
 }
 
 .rule_title_container {

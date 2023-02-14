@@ -7,7 +7,7 @@ import "./About.css";
 export default function About() {
 	return (
 			<div className = "about_container">
-				<Banner img={bannerImg} className="about_banner"/>
+				<Banner img={bannerImg}/>
 				{Rules.map((rule, id) => (
 					<CollapseEffect
 						key={id}
