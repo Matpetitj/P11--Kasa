@@ -22,7 +22,11 @@ root.render(
                   <Route path = "*" element={<Error />} />
                 </Routes>
                 <Footer />
+                {/* peut déplacer le footer hors du globalstyle et lui mettre 
+                son propre style pour qu'il se positionne en bas de page et remplisse
+                la largeur */}
               </div>
+              {/* <Footer /> */}
     </Router>
   </React.StrictMode>,
   // document.getElementById('root')

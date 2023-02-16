@@ -4,12 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function CollapseEffect ({ruleTitle, ruleText}) {
-    //function callback onclick
     const [open, setOpen] = useState(false);
 
     const toggleState = () => {
         setOpen(!open);
     };
+
+    //besoin de changer le sens de la flèche en même temps que l'open
+    //utiliser le statut true pour pour la condition
+    //bloquer le footer en bas de page sans bouger le reste des éléments
 
     return (
         <div className="rules_container">

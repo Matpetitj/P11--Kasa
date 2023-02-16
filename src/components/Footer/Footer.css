@@ -8,6 +8,7 @@
     flex-direction: column;
     background-color: var(--footer-color);
     max-width: 1240px;
+    bottom: 0px;
 }
 
 .footer_container_text {

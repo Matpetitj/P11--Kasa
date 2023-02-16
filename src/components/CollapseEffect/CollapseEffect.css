@@ -17,6 +17,10 @@
     margin-bottom: -5px;
 }
 
+.rule_title_container:hover {
+    cursor: pointer;
+}
+
 .rule_title {
     margin-left: 11px;
     font-size: 13px;
