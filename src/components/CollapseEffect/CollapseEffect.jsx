@@ -10,17 +10,14 @@ export default function CollapseEffect ({ruleTitle, ruleText}) {
         setOpen(!open);
     };
 
-    //besoin de changer le sens de la flèche en même temps que l'open
-    //utiliser le statut true pour pour la condition
-    //bloquer le footer en bas de page sans bouger le reste des éléments
-
     return (
         <div className="rules_container">
             <div className="rule_title_container" onClick={toggleState}>
                 <h2 className="rule_title">{ruleTitle}</h2>
-                <FontAwesomeIcon icon={ faChevronDown } className="chevron"/>
+                <FontAwesomeIcon icon={ faChevronDown } className={"chevron" + (open ? " open" : "" )}/>
             </div>
             <div className="rule_text_container">
+                {/* mettre le ref ici pour la transition*/}
                 {open && 
                     <p className="rule_text">{ruleText}</p>
                 }

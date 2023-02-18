@@ -1,4 +1,5 @@
 import "./Accomodation.css";
+import accomodations from "../../assets/Datas/logements.json";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 // import Profil from "../../components/Profil/Profil";
@@ -8,16 +9,31 @@ import { useParams, useNavigate } from "react-router-dom";
 import Collapse from "../../components/CollapseEffect/CollapseEffect";
 
 export default function AccomodationSheet () {
-    const params = useParams();
+    const {id} = useParams();
+    const navigate = useNavigate();
+
+    const [accomodation, setAccomodation] = useState();
+    useEffect(() => {
+        setAccomodation(accomodations.find(item => {
+            return item.id === id
+        }))
+    },[id])
+
+    // const [takeAppart, setTakkenAppart] = useState();
+    // useEffect (() => {
+    //     const getData = async () => {
+
+    //     }
+    // })
 
     return (
-        <div key={params.id} className="sheet_container">
+        <div key={id} className="sheet_container">
             {/* <Carrousel /> */}
             <section className="sheet_info_container">
                 <div className="title_tag_container">
                     <div className="title_container">
-                        <h1 className="title">Title</h1>
-                        <h3 className="location">Location</h3>
+                        <h1 className="title">{accomodation.title}</h1>
+                        <h3 className="location">{accomodation.location}</h3>
                     </div>
                     <div className="tag_container">
                         {/* <Tag /> */}
@@ -26,11 +42,16 @@ export default function AccomodationSheet () {
                 </div>
                 <div className="rate_profil_container">
                     <div className="profil_container">
-                        {/* <Profil /> */}
+                        {/* <Profil 
+                            profilName={accomodation.host.name}
+                            profilPic={accomodation.host.picture}
+                        /> */}
                         <p className="Profil">Profil</p>
                     </div>
                     <div className="rate_container">
-                        {/* <Rate /> */}
+                        {/* <Rate 
+                            appartRate={accomodation.rating}
+                        /> */}
                         <p className="rate">Rate</p>
                     </div>
                 </div>

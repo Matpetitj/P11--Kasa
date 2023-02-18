@@ -5,6 +5,7 @@
     margin-top: 19px;
     background-color: var(--secondary-color);
     max-height: 193px;
+    max-width: 1240px;
 }
 
 .rule_title_container {
@@ -32,20 +33,16 @@
 
 .chevron {
     margin-right: 11px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.chevron.open {
+    transform: rotate(-180deg);
+
 }
 
 .chevron path {
     fill: var(--tertiary-color);
-}
-
-/* .arrow::before {
-    transform: rotate(-180deg);
-} */
-
-.arrow:hover {
-    cursor: pointer;
-    transform: rotate(-180deg);
-    transition: 0.4s ease-in-out;
 }
 
 .rule_text_container {
