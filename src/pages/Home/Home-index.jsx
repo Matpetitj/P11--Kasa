@@ -11,10 +11,10 @@ export default function Home() {
 			<div className = "home_container">
 				<Banner img={bannerImg} text="Chez vous, partout et ailleurs"/>
 				<div className="cards_accomodation_container">
-					{accomodations.map((appart, id) => (
+					{accomodations.map((accomodation, id) => (
 						<div className="card_accomodation" key={id}>
-							<Link className="card_accomodation_link" to={`/accomodation/${appart.id}`}>
-								<Card cover={appart.cover} title={appart.title} alt={appart.title} />
+							<Link className="card_accomodation_link" to={`/accomodation/${accomodation.id}`}>
+								<Card cover={accomodation.cover} title={accomodation.title} alt={accomodation.title} />
 							</Link>
 						</div>
 					))}
@@ -23,8 +23,3 @@ export default function Home() {
 		</>
 	);
 }
-
-//importer le json
-//remplacer data par la variable
-//{title}
-//rajouter le alt directement dans l16

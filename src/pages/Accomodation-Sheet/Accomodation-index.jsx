@@ -4,27 +4,20 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 // import Profil from "../../components/Profil/Profil";
 // import Rate from "../../components/Rate/Rate";
-// import Tag from "../../components/Tag/Tag"
+import Tag from "../../components/Tag/Tag"
 // import Carrousel from "../../components/Carrousel/Carrousel";
 import Collapse from "../../components/CollapseEffect/CollapseEffect";
 
-export default function AccomodationSheet () {
+export default function AccomodationSheet (tagText) {
     const {id} = useParams();
-    const navigate = useNavigate();
 
     const [accomodation, setAccomodation] = useState();
+    // {}
     useEffect(() => {
         setAccomodation(accomodations.find(item => {
             return item.id === id
         }))
     },[id])
-
-    // const [takeAppart, setTakkenAppart] = useState();
-    // useEffect (() => {
-    //     const getData = async () => {
-
-    //     }
-    // })
 
     return (
         <div key={id} className="sheet_container">
@@ -32,12 +25,12 @@ export default function AccomodationSheet () {
             <section className="sheet_info_container">
                 <div className="title_tag_container">
                     <div className="title_container">
-                        <h1 className="title">{accomodation.title}</h1>
+                        <h1 className="title" >{accomodation.title}</h1>
                         <h3 className="location">{accomodation.location}</h3>
                     </div>
                     <div className="tag_container">
-                        {/* <Tag /> */}
-                        <p className="tag">Tags</p>
+                        <Tag key={tagText}/>
+                        {/* <p className="tag">Tags</p> */}
                     </div>
                 </div>
                 <div className="rate_profil_container">
@@ -57,13 +50,13 @@ export default function AccomodationSheet () {
                 </div>
             </section>
             <section className="sheet_collapse_container">
-                <Collapse 
+                <Collapse className="acc_collapse"
                     ruleTitle="Description"
-                    ruleText="Description Text"
+                    ruleText={accomodation.description}
                     />
-                <Collapse 
+                <Collapse className="acc_collapse"
                     ruleTitle="Equipements"
-                    ruleText="Equipement_text"
+                    ruleText={accomodation.equipments}
                     />
             </section>
         </div>
