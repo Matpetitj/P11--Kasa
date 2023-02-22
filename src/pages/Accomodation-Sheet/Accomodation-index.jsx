@@ -11,8 +11,7 @@ import Collapse from "../../components/CollapseEffect/CollapseEffect";
 export default function AccomodationSheet (tagText) {
     const {id} = useParams();
 
-    const [accomodation, setAccomodation] = useState();
-    // {}
+    const [accomodation, setAccomodation] = useState({});
     useEffect(() => {
         setAccomodation(accomodations.find(item => {
             return item.id === id
