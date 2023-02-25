@@ -12,7 +12,7 @@ export default function About() {
 					<CollapseEffect
 						key={id}
 						ruleTitle={rule.ruleTitle}
-						ruleText={rule.ruleText}
+						ruleText={<p>{rule.ruleText}</p>}
 					/>
 				))}
 			</div>

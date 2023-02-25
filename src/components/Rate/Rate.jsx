@@ -2,6 +2,7 @@ import emptyStar from "../../assets/Images/emptyStar.svg";
 import fullStar from "../../assets/Images/fullStar.svg";
 
 export default function Rate({ score }) {
+	console.log(score);
 	const stars = [1, 2, 3, 4, 5];
 	return (
 		<div className="rate_container">

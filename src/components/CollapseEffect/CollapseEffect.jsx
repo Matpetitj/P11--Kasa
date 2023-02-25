@@ -19,7 +19,7 @@ export default function CollapseEffect ({ruleTitle, ruleText}) {
             <div className="rule_text_container">
                 {/* mettre le ref ici pour la transition*/}
                 {open && 
-                    <p className="rule_text">{ruleText}</p>
+                    <div className="rule_text">{ruleText}</div>
                 }
             </div>
         </div>
