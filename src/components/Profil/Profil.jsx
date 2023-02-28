@@ -1,3 +1,5 @@
+import "./Profil.css";
+
 export default function profile(props) {
 	return (
 		<aside className="profil_container">

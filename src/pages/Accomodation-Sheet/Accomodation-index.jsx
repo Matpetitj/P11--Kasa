@@ -37,15 +37,15 @@ export default function AccomodationSheet () {
                     </div>
                 </div>
                 <div className="rate_profil_container">
-                    <div className="profil_container">
+                    <div className="profil_container_index">
                         <Profil 
                             profilName={accomodation.host.name}
                             profilPic={accomodation.host.picture}
                         />
                     </div>
-                    <div className="rate_container">
+                    <div className="rate_container_index">
                         <Rate 
-                            score={accomodation.rating}
+                            rate={accomodation.rating}
                         />
                     </div>
                 </div>

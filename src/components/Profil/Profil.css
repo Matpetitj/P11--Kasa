@@ -1,0 +1,32 @@
+.profil_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profil_name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 63px;
+    height: 66px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.profil_picture {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.profil_picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}

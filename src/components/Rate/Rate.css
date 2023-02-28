@@ -1,0 +1,17 @@
+.rate_container {
+    display: flex;
+    justify-content: space-between;
+    width: 98px;
+    height: 18px;
+    margin-top: 24px;
+}
+
+.rate_container_index {
+    display: flex;
+    align-items: flex-start;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+}
