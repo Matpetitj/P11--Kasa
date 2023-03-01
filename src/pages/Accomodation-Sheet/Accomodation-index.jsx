@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import Profil from "../../components/Profil/Profil";
 import Rate from "../../components/Rate/Rate";
 import Tag from "../../components/Tag/Tag"
-// import Carrousel from "../../components/Carrousel/Carrousel";
+import Carrousel from "../../components/Carrousel/Carrousel";
 import Collapse from "../../components/CollapseEffect/CollapseEffect";
 
 export default function AccomodationSheet () {
@@ -13,7 +13,8 @@ export default function AccomodationSheet () {
 
     const [accomodation, setAccomodation] = useState({
         tags:[],
-        host:{}
+        host:{},
+        pictures:[],
     });
     useEffect(() => {
         setAccomodation(accomodations.find(item => {
@@ -23,7 +24,7 @@ export default function AccomodationSheet () {
 
     return (
         <div key={id} className="sheet_container">
-            {/* <Carrousel /> */}
+            <Carrousel slides={accomodation.pictures}/>
             <section className="sheet_info_container">
                 <div className="title_tag_container">
                     <div className="title_container">

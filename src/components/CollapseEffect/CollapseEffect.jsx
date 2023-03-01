@@ -1,5 +1,5 @@
 import "../../components/CollapseEffect/CollapseEffect.css";
-import {useState, useRef, useEffect} from "react";
+import {useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +17,7 @@ export default function CollapseEffect ({ruleTitle, ruleText}) {
                 <FontAwesomeIcon icon={ faChevronDown } className={"chevron" + (open ? " open" : "" )}/>
             </div>
             <div className="rule_text_container">
-                {/* mettre le ref ici pour la transition*/}
+                {/* mettre le useRef ici pour la transition*/}
                 {open && 
                     <div className="rule_text">{ruleText}</div>
                 }
