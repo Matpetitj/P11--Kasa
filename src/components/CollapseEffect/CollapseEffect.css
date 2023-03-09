@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    border-radius: 5px;
+    border-radius: 10px;
     height: 30px;
     margin-bottom: -5px;
 }
@@ -46,7 +46,7 @@
 }
 
 .rule_text_container {
-    border-radius: 5px;
+    border-radius: 10px;
     opacity: 1;
 }
 
@@ -56,4 +56,20 @@
     line-height: 17.11px;
     font-weight: 400;
     margin: 17px 7px 40px 11px;
+}
+
+@media screen and (min-width: 769px) {
+
+    .rule_title {
+        font-size: 18px;
+    }
+
+    .rule_title_container {
+        height: 47px;
+    }
+
+    .rule_text {
+        line-height: 25px;
+        font-size: 18px;
+    }
 }

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .profil_name {
@@ -29,4 +30,17 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media screen and (min-width: 769px) {
+
+    .profil_name {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .profil_picture {
+        width: 64px;
+        height: 64px;
+    }
 }
