@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 19px;
-    background-color: var(--secondary-color);
-    max-height: 193px;
+    /* max-height: 193px; */
     max-width: 1023px;
 }
 
@@ -16,6 +15,7 @@
     border-radius: 10px;
     height: 30px;
     margin-bottom: -5px;
+    z-index: 2;
 }
 
 .rule_title_container:hover {
@@ -48,6 +48,8 @@
 .rule_text_container {
     border-radius: 10px;
     opacity: 1;
+    background-color: var(--secondary-color);
+    z-index: 1;
 }
 
 .rule_text {

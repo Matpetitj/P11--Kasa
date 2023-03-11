@@ -21,23 +21,31 @@ export default function Carrousel({ slides, alt }) {
 
   return (
     <div className="carrousel_container">
-      <div className="carrousel_img_container">
-        <div className="current_slide">
-          {currentIndex + 1} / {slides.length}
-        </div>
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          onClick={prevSlide}
-          className="left_chevron"
-        />
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          onClick={nextSlide}
-          className="right_chevron"
-        />
+      <div className="current_slide">
+        {currentIndex + 1} / {slides.length}
+      </div>
+      <FontAwesomeIcon
+        icon={faChevronLeft}
+        onClick={prevSlide}
+        className="left_chevron"
+      />
+      <FontAwesomeIcon
+        icon={faChevronRight}
+        onClick={nextSlide}
+        className="right_chevron"
+      />
+      <div
+        className="carrousel_img_container"
+        style={{ translate: -currentIndex * 100 + '%' }}
+      >
         {slides.map((slide, slideIndex) => {
           return (
-            <img key={slideIndex} src={slide} alt={alt} id="carrousel_img" />
+            <img
+              key={slideIndex}
+              src={slide}
+              alt={alt}
+              className="carrousel_img"
+            />
           )
         })}
       </div>

@@ -28,6 +28,10 @@
     right: 32.53%;
 }
 
+.about_container .banner_container {
+    height: 223px;
+}
+
 @media screen and (min-width: 769px) {
 
     .banner_container {
