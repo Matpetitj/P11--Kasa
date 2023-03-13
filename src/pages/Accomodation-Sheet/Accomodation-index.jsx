@@ -7,6 +7,7 @@ import Rate from '../../components/Rate/Rate'
 import Tag from '../../components/Tag/Tag'
 import Carrousel from '../../components/Carrousel/Carrousel'
 import Collapse from '../../components/CollapseEffect/CollapseEffect'
+// import Error from '../Error/Error-index'
 
 export default function AccomodationSheet() {
   const { id } = useParams()
@@ -23,6 +24,10 @@ export default function AccomodationSheet() {
       })
     )
   }, [id])
+
+  // if (!accomodation) {
+  //   return <Error />
+  // }
 
   return (
     <div key={id} className="sheet_container">
