@@ -43,6 +43,10 @@
     width: 100%;
 }
 
+.acc_collapse_list {
+    line-height: 0px;
+}
+
 @media screen and (min-width: 769px) {
 
     .title {
