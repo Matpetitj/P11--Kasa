@@ -58,20 +58,16 @@ export default function AccomodationSheet() {
         </div>
       </section>
       <section className="sheet_collapse_container">
-        <Collapse
-          className="acc_collapse"
-          ruleTitle="Description"
-          ruleText={accomodation.description}
-        />
-        <Collapse
-          className="acc_collapse_list"
-          ruleTitle="Equipements"
-          ruleText={accomodation.equipments.map((text) => (
+        <Collapse className="acc_collapse" ruleTitle="Description">
+          {accomodation.description}
+        </Collapse>
+        <Collapse className="acc_collapse_list" ruleTitle="Equipements">
+          {accomodation.equipments.map((text) => (
             <li className="collapse_list" key={text}>
               {text}
             </li>
           ))}
-        />
+        </Collapse>
       </section>
     </div>
   )

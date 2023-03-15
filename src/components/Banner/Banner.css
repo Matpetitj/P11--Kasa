@@ -14,18 +14,24 @@
     object-fit: cover;
 }
 
-.banner_text {
+.banner_text_container {
     position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+}
+
+.banner_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
-    width: 240px;
-    height: 48px;
     color: var(--tertiary-color);
-    top: 28%;
-    bottom: 80.05%;
-    left: 7%;
-    right: 32.53%;
+    height: 100%;
 }
 
 .about_container .banner_container {
@@ -46,9 +52,6 @@
     }
 
     .banner_text {
-        top: 0;
-        left: 0;
-        right: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -56,70 +59,7 @@
         height: 100%;
         font-size: 48px;
         font-weight: 500;
-        line-height: 142,6%;
+        line-height: 50px;
         border-radius: 25px;
     }
 }
-
-/* .banner_container {
-    height: 111px;
-    width: 100%;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-#img_home_banner {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.banner_text {
-    position: absolute;
-    top: 28%;
-    left: 5.6%;
-    right: 32,53%;
-    bottom: 80,05%;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 100%;
-    border-radius: 10px;
-    width: 217px;
-    height: 48px;
-    color: white;
-}
-
-@media screen and (min-width: 769px) {
-    .banner_container {
-        height: 223px;
-        border-radius: 25px;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .banner_text {
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        font-size: 48px;
-        font-weight: 500;
-        line-height: 142,6%;
-        border-radius: 25px;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    #img_home_banner{
-        border-radius: 25px;
-    }
-} */
