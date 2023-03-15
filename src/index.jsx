@@ -14,7 +14,6 @@ root.render(
   <React.StrictMode>
     <Router>
       <div className="global_style">
-        {/* faire un children au global style avec tout sauf le footer */}
         <div style={{ flex: 1 }}>
           <Header />
           <Routes>
@@ -26,8 +25,6 @@ root.render(
         </div>
         <Footer />
       </div>
-      {/* <Footer /> */}
     </Router>
   </React.StrictMode>
-  // document.getElementById('root')
 )
