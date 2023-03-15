@@ -67,9 +67,9 @@ export default function AccomodationSheet() {
           className="acc_collapse_list"
           ruleTitle="Equipements"
           ruleText={accomodation.equipments.map((text) => (
-            <p className="collapse_list" key={text}>
+            <li className="collapse_list" key={text}>
               {text}
-            </p>
+            </li>
           ))}
         />
       </section>

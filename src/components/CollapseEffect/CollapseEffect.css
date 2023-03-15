@@ -59,6 +59,10 @@
     margin: 17px 7px 40px 11px;
 }
 
+.collapse_list {
+    list-style: none;
+}
+
 @media screen and (min-width: 769px) {
 
     .rule_title {
