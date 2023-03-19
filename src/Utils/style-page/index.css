@@ -7,6 +7,14 @@
     --footer-color: #000000;
  }
 
+ #root, body {
+   width: 100%;
+ }
+
+ body {
+   margin: 0;
+ }
+
  .global_style {
     display: flex;
     flex-direction: column;
@@ -18,13 +26,9 @@
     padding: 4% 3%;
  }
 
- /* .home_container .banner_container {
-   width: 20px;
- } */
-
  @media screen and (min-width: 769px) {
    .global_style {
-      padding: 2% 6%;
+      padding: 2% 7%;
    }
  }
 
