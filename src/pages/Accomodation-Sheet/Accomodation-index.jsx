@@ -1,5 +1,5 @@
 import './Accomodation.css'
-import accommodations from '../../assets/Datas/logements.json'
+import accomodations from '../../assets/Datas/logements.json'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Profil from '../../components/Profil/Profil'
@@ -20,7 +20,7 @@ export default function AccomodationSheet() {
   })
   useEffect(() => {
     setAccomodation(
-      accommodations.find((item) => {
+      accomodations.find((item) => {
         return item.id === id
       })
     )
