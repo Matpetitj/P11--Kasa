@@ -22,10 +22,6 @@
 
 @media screen and (min-width: 769px) {
 
-    /* .header_group {
-        margin: 40px 90px 48px 95px;
-    } */
-
     .header_group_figure {
         width: 210px;
         height: 68px;
@@ -36,9 +32,3 @@
         height: 100%;
     }
 }
-
-/* @media screen and (min-width: 1441px) {
-    .header_group_figure {
-        margin-right: 80vh;
-    }
-} */
