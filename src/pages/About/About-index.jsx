@@ -16,5 +16,3 @@ export default function About() {
     </div>
   )
 }
-
-// ruleText={<p>{rule.ruleText}</p>}
