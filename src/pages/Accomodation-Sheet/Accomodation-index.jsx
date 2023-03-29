@@ -1,16 +1,16 @@
 import './Accomodation.css'
 import accomodations from '../../assets/Datas/logements.json'
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import Profil from '../../components/Profil/Profil'
 import Rate from '../../components/Rate/Rate'
 import Tag from '../../components/Tag/Tag'
 import Carrousel from '../../components/Carrousel/Carrousel'
 import Collapse from '../../components/CollapseEffect/CollapseEffect'
-import Error from '../Error/Error-index'
 
 export default function AccomodationSheet() {
   const { id } = useParams()
+  const navigate = useNavigate()
 
   const [accomodation, setAccomodation] = useState({
     tags: [],
@@ -19,16 +19,15 @@ export default function AccomodationSheet() {
     equipments: [],
   })
   useEffect(() => {
-    setAccomodation(
-      accomodations.find((item) => {
-        return item.id === id
-      })
-    )
+    const findId = accomodations.find((item) => {
+      return item.id === id
+    })
+    if (findId === null) {
+      navigate('error')
+    } else {
+      setAccomodation(findId)
+    }
   }, [id])
-
-  if (!accomodation) {
-    return <Error />
-  }
 
   return (
     <div key={id} className="sheet_container">

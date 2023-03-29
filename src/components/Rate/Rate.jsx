@@ -3,7 +3,6 @@ import fullStar from '../../assets/Images/fullStar.svg'
 import './Rate.css'
 
 export default function Rate({ rate }) {
-  console.log(rate)
   const stars = [1, 2, 3, 4, 5]
   return (
     <div className="rate_container">

@@ -20,7 +20,7 @@ export default function Carrousel({ slides, alt }) {
   }
 
   function ShowChevron() {
-    if (slides.length === 1) {
+    if (slides.length <= 1) {
       return null
     } else {
       return (
@@ -46,16 +46,6 @@ export default function Carrousel({ slides, alt }) {
         {currentIndex + 1} / {slides.length}
       </div>
       <ShowChevron />
-      {/* <FontAwesomeIcon
-        icon={faChevronLeft}
-        onClick={prevSlide}
-        className="left_chevron"
-      />
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        onClick={nextSlide}
-        className="right_chevron"
-      /> */}
       <div
         className="carrousel_img_container"
         style={{ translate: -currentIndex * 100 + '%' }}
@@ -74,29 +64,3 @@ export default function Carrousel({ slides, alt }) {
     </div>
   )
 }
-
-// export default function Carrousel({}) {
-// 	const [currentSlide, setCurrentSlide] = useState(0);
-// 	const length = slides.length;
-
-// 	const nextSlide = () => {
-// 		setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
-// 	};
-// 	const prevSlide = () => {
-// 		setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
-// 	};
-
-// 	return (
-// 		<section id="carrousel-container">
-// 			{length > 1 && (<img src={<FontAwesomeIcon icon={ faChevronLeft }/>} alt="Flèche gauche" onClick={prevSlide} className="left_chevron"/>)}
-// 			{length > 1 && (<img src={<FontAwesomeIcon icon={ faChevronRight }/>} alt="Flèche droite" onClick={nextSlide} className="right_chevron"/>)}
-// 			{slides.map((slide, index) => (
-// 				<div key={index} className={currentSlide === index? "slider bl-msk wh-msk active-anim": "slider bl-msk wh-msk"}>
-// 					{index === currentSlide && <img src={slide} alt="Appartement à louer" />}
-// 					{index === currentSlide && (<span className="slider_number">{currentSlide + 1}/{length}</span>
-// 					)}
-// 				</div>
-// 			))}
-// 		</section>
-// 	);
-// }
