@@ -19,21 +19,33 @@ export default function Carrousel({ slides, alt }) {
     setCurrentIndex(newIndex)
   }
 
+  function ShowChevron() {
+    if (slides.length === 1) {
+      return null
+    } else {
+      return (
+        <div>
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            onClick={prevSlide}
+            className="left_chevron"
+          />
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            onClick={nextSlide}
+            className="right_chevron"
+          />
+        </div>
+      )
+    }
+  }
+
   return (
     <div className="carrousel_container">
       <div className="current_slide">
         {currentIndex + 1} / {slides.length}
       </div>
-      <FontAwesomeIcon
-        icon={faChevronLeft}
-        onClick={prevSlide}
-        className="left_chevron"
-      />
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        onClick={nextSlide}
-        className="right_chevron"
-      />
+      <ShowChevron />
       <div
         className="carrousel_img_container"
         style={{ translate: -currentIndex * 100 + '%' }}

@@ -1,4 +1,4 @@
-.card_accomodation {
+.card_accommodation {
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,19 +9,19 @@
     margin-top: 12px;
 }
 
-.card_accomodation:hover {
+.card_accommodation:hover {
     cursor: pointer;
     transform: scale(1.03);
     transition: ease 0.4s;
 }
 
-#accomodation_img {
+#accommodation_img {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.card_accomodation_style {
+.card_accommodation_style {
     display: flex;
     align-items: center;
     position: absolute;
@@ -32,7 +32,7 @@
     height: 60%;
 }
 
-.card_accomodation_title {
+.card_accommodation_title {
     display: flex;
     align-items: flex-end;
     position: absolute;
@@ -49,52 +49,8 @@
 
 @media screen and (min-width: 769px) {
 
-    .card_accomodation {
+    .card_accommodation {
         width: 340px;
         height: 340px;
     }
 }
-
-/* .card_accomodation {
-    position: relative;
-    display: flex;
-    width: 335px;
-    height: 255px;
-    border-radius: 10px;
-    min-width: 335px;
-    margin-top: 20px;
-}
-
-.card_accomodation:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: ease 0.4s;
-}
-
-
-#accomodation_img {
-    display: flex;
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.card_accomodation_style {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-}
-
-/* modifier le gradient et déplacer le titre */
-
-/* @media screen and (min-width: 769px) {
-    .card_accomodation {
-        width: 340px;
-        height: 340px;
-    }
-} */
