@@ -1,45 +1,45 @@
-import './Accomodation.css'
-import accomodations from '../../assets/Datas/logements.json'
+import './Accommodation.css'
+import accommodations from '../../assets/Datas/logements.json'
 import { useState, useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, redirect } from 'react-router-dom'
 import Profil from '../../components/Profil/Profil'
 import Rate from '../../components/Rate/Rate'
 import Tag from '../../components/Tag/Tag'
 import Carrousel from '../../components/Carrousel/Carrousel'
 import Collapse from '../../components/CollapseEffect/CollapseEffect'
 
-export default function AccomodationSheet() {
+export default function AccommmodationSheet() {
   const { id } = useParams()
   const navigate = useNavigate()
 
-  const [accomodation, setAccomodation] = useState({
+  const [accommodation, setAccommodation] = useState({
     tags: [],
     host: {},
     pictures: [],
     equipments: [],
   })
   useEffect(() => {
-    const findId = accomodations.find((item) => {
+    const findId = accommodations.find((item) => {
       return item.id === id
     })
-    if (findId === null) {
-      navigate('error')
+    if (!findId) {
+      return navigate('/404', { state: { message: "Can't get data" } })
     } else {
-      setAccomodation(findId)
+      setAccommodation(findId)
     }
   }, [id])
 
   return (
     <div key={id} className="sheet_container">
-      <Carrousel slides={accomodation.pictures} className="slider_container" />
+      <Carrousel slides={accommodation.pictures} className="slider_container" />
       <section className="sheet_info_container">
         <div className="title_tag_container">
           <div className="title_container">
-            <h1 className="title">{accomodation.title}</h1>
-            <h3 className="location">{accomodation.location}</h3>
+            <h1 className="title">{accommodation.title}</h1>
+            <h3 className="location">{accommodation.location}</h3>
           </div>
           <div className="tags_container">
-            {accomodation.tags.map((tag) => (
+            {accommodation.tags.map((tag) => (
               <Tag key={tag} tags={tag} />
             ))}
           </div>
@@ -47,21 +47,21 @@ export default function AccomodationSheet() {
         <div className="rate_profil_container">
           <div className="profil_container_index">
             <Profil
-              profilName={accomodation.host.name}
-              profilPic={accomodation.host.picture}
+              profilName={accommodation.host.name}
+              profilPic={accommodation.host.picture}
             />
           </div>
           <div className="rate_container_index">
-            <Rate rate={accomodation.rating} />
+            <Rate rate={accommodation.rating} />
           </div>
         </div>
       </section>
       <section className="sheet_collapse_container">
         <Collapse className="acc_collapse" ruleTitle="Description">
-          {accomodation.description}
+          {accommodation.description}
         </Collapse>
         <Collapse className="acc_collapse_list" ruleTitle="Equipements">
-          {accomodation.equipments.map((text) => (
+          {accommodation.equipments.map((text) => (
             <li className="collapse_list" key={text}>
               {text}
             </li>

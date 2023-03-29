@@ -4,7 +4,7 @@
     flex-direction: column;
 }
 
-.cards_accomodation_container {
+.cards_accommodation_container {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -20,7 +20,7 @@
         max-width: 1240px;
     }
 
-    .cards_accomodation_container {
+    .cards_accommodation_container {
         max-width: 1240px;
         gap: 60px;
         padding: 50px 30px;
