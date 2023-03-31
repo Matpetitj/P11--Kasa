@@ -1,7 +1,7 @@
 import './Accommodation.css'
 import accommodations from '../../assets/Datas/logements.json'
 import { useState, useEffect } from 'react'
-import { useParams, useNavigate, redirect } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import Profil from '../../components/Profil/Profil'
 import Rate from '../../components/Rate/Rate'
 import Tag from '../../components/Tag/Tag'
@@ -27,7 +27,7 @@ export default function AccommmodationSheet() {
     } else {
       setAccommodation(findId)
     }
-  }, [id])
+  }, [id, navigate])
 
   return (
     <div key={id} className="sheet_container">
