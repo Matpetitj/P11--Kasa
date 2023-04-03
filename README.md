@@ -11,7 +11,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-ATTETION, to install "yarn" go into the file "kasa" with the prompt command and then enter the following instructions:
+ATTENTION / CAREFULL, to install "yarn" go into the file "kasa" with the prompt command and then enter the following instructions:
 
 - `npm install --global yarn`
 - then you'll able to start the localhost:3000 with `yarn start`
