@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ATTENTION / CAREFULL, to install "yarn" go into the file "kasa" with the prompt command and then enter the following instructions:
 
 - `npm install --global yarn`
-- then you'll able to start the localhost:3000 with `yarn start`
+- then you'll be able to start the localhost:3000 with `yarn start`
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
