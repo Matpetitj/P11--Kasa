@@ -1,3 +1,5 @@
+@import "../../Utils/style/variable.scss";
+
 .nav_header {
     display: flex;
     align-items: center;
@@ -10,7 +12,7 @@
     font-weight: 500;
     text-align: right;
     line-height: 142%;
-    color: var(--primary-color);
+    color: $primaryColor;
     text-decoration: none;
     padding-left: 10px;
 }

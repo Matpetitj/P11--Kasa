@@ -1,6 +1,6 @@
 import accommodations from '../../assets/Datas/logements.json'
 import bannerImg from '../../assets/Images/background-banner.png'
-import './Home.css'
+import '../../Utils/style-page/index.css'
 import Banner from '../../components/Banner/Banner'
 import Card from '../../components/Cards/Card'
 import { Link } from 'react-router-dom'

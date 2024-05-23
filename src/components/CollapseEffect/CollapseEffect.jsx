@@ -1,4 +1,4 @@
-import '../../components/CollapseEffect/CollapseEffect.css'
+import '../../Utils/style-page/index.css'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'

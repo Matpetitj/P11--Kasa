@@ -1,11 +1,13 @@
+@import "../../Utils/style/variable.scss";
+
 .tag_container {
     display: flex;
 
 }
 
 .tag_text {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: $primaryColor;
+    color: $tertiaryColor;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,4 +41,3 @@
         font-size: 14px;
     }
 }
-

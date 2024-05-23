@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import './Carrousel.css'
+import '../../Utils/style-page/index.css'
 
 export default function Carrousel({ slides, alt }) {
   const [currentIndex, setCurrentIndex] = useState(0)

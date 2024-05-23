@@ -1,4 +1,4 @@
-import './Banner.css'
+import '../../Utils/style-page/index.css'
 
 export default function Banner({ img, text }) {
   let textElement = ''

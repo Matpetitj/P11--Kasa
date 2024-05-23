@@ -1,3 +1,5 @@
+@import "../../Utils/style/variable.scss";
+
 .banner_container {
     width: 100%;
     height: 111px;
@@ -28,7 +30,7 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
-    color: var(--tertiary-color);
+    color: $tertiaryColor;
     height: 100%;
 }
 

@@ -1,3 +1,5 @@
+@import "../../Utils/style/variable.scss";
+
 .rules_container {
     width: 100%;
     display: flex;
@@ -10,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: $primaryColor;
     border-radius: 10px;
     height: 30px;
     margin-bottom: -5px;
@@ -27,7 +29,7 @@
     line-height: 18.54px;
     font-weight: 500;
     left: 11.50px;
-    color: var(--tertiary-color);
+    color: $tertiaryColor;
 }
 
 .chevron {
@@ -41,18 +43,18 @@
 }
 
 .chevron path {
-    fill: var(--tertiary-color);
+    fill: $tertiaryColor;
 }
 
 .rule_text_container {
     border-radius: 10px;
     opacity: 1;
-    background-color: var(--secondary-color);
+    background-color: $secondaryColor;
     z-index: 1;
 }
 
 .rule_text {
-    color: var(--primary-color);
+    color: $primaryColor;
     font-size: 12px;
     line-height: 17.11px;
     font-weight: 400;

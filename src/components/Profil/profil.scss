@@ -1,3 +1,5 @@
+@import "../../Utils/style/variable.scss";
+
 .profil_container {
     display: flex;
     align-items: center;
@@ -14,7 +16,7 @@
     text-align: right;
     font-size: 12px;
     font-weight: 500;
-    color: var(--primary-color);
+    color: $primaryColor;
 }
 
 .profil_picture {
