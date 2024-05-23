@@ -6,10 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` or `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+ATTENTION / CAREFULL, to install "yarn" go into the file "kasa" with the prompt command and then enter the following instructions:
+
+- `npm install --global yarn`
+- then you'll be able to start the localhost:3000 with `yarn start`
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
