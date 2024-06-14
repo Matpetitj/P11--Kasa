@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import '../../Utils/style-page/index.css'
+import './carrousel.scss'
 
 export default function Carrousel({ slides, alt }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -40,11 +40,21 @@ export default function Carrousel({ slides, alt }) {
     }
   }
 
+  function ShowIndex() {
+    if (slides.length <= 1) {
+      return null
+    } else {
+      return (
+        <div className="current_slide">
+          {currentIndex + 1} / {slides.length}
+        </div>
+      )
+    }
+  }
+
   return (
     <div className="carrousel_container">
-      <div className="current_slide">
-        {currentIndex + 1} / {slides.length}
-      </div>
+      <ShowIndex />
       <ShowChevron />
       <div
         className="carrousel_img_container"

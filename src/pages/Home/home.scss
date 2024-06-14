@@ -1,5 +1,7 @@
+@import "../../Utils/style/variable.scss";
+
 .home_container {
-    max-width: 1240px;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
 }
@@ -8,20 +10,20 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    max-width: 1240px;
+    max-width: 1440px;
     height: 100%;
     border-radius: 10px;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 @media screen and (min-width: 769px) {
     
     .home_container {
-        max-width: 1240px;
+        max-width: 1440px;
     }
 
     .cards_accommodation_container {
-        max-width: 1240px;
         gap: 60px;
         padding: 50px 30px;
         background-color: $secondaryColor;

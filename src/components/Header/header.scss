@@ -22,6 +22,10 @@
     height: 100%;
 }
 
+.header_group_figure img:hover {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 769px) {
 
     .header_group_figure {

@@ -1,4 +1,4 @@
-import '../../Utils/style-page/index.css'
+import './tag.scss'
 
 export default function Tag(props) {
   return (

@@ -1,4 +1,4 @@
-import '../../Utils/style-page/index.css'
+import './profil.scss'
 
 export default function profile(props) {
   return (

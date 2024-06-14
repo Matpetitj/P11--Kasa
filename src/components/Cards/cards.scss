@@ -1,8 +1,10 @@
+@import "../../Utils/style/variable.scss";
+
 .card_accomodation {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 350px;
     height: 225px;
     min-width: 335px;
     border-radius: 10px;

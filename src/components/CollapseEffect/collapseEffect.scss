@@ -39,7 +39,6 @@
 
 .chevron.open {
     transform: rotate(-180deg);
-
 }
 
 .chevron path {
@@ -48,9 +47,16 @@
 
 .rule_text_container {
     border-radius: 10px;
-    opacity: 1;
     background-color: $secondaryColor;
-    z-index: 1;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.8s ease, opacity 0.8s ease; // Transition pour max-height et opacity
+}
+
+.rule_text_container.open {
+    max-height: 500px; // Ajustez cette valeur selon la hauteur maximale attendue
+    opacity: 1;
 }
 
 .rule_text {
@@ -66,7 +72,6 @@
 }
 
 @media screen and (min-width: 769px) {
-
     .rule_title {
         font-size: 18px;
     }

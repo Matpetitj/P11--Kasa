@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer-index'
 function App() {
   return (
     <div className="global_style">
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1 }} className="main">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

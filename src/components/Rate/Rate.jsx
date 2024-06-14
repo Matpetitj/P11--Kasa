@@ -1,6 +1,6 @@
 import emptyStar from '../../assets/Images/emptyStar.svg'
 import fullStar from '../../assets/Images/fullStar.svg'
-import '../../Utils/style-page/index.css'
+import './rate.scss'
 
 export default function Rate({ rate }) {
   const stars = [1, 2, 3, 4, 5]

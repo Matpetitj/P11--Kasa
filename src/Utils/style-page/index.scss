@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "../style/variable.scss";
-@import "./centralise.scss";
 
 
 #root, body {
@@ -8,17 +7,22 @@
 }
 
 body {
-margin: 0;
+    margin: 0;
 }
 
 .global_style {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     min-height: 100vh;
     min-width: 335px;
     max-width: 1440px;
     font-family: 'Montserrat', Helvetica, sans-serif;
+    margin: auto;
+}
+
+.main {
     padding: 4% 5%;
 }
 
@@ -28,8 +32,8 @@ margin: 0;
 }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
 .global_style {
-    padding: 1% 17%;
+    padding: 1% 7%;
 }
 }

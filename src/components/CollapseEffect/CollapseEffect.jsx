@@ -1,4 +1,4 @@
-import '../../Utils/style-page/index.css'
+import './collapseEffect.scss'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -19,8 +19,8 @@ export default function CollapseEffect({ ruleTitle, children }) {
           className={'chevron' + (open ? ' open' : '')}
         />
       </div>
-      <div className="rule_text_container">
-        {open && <div className="rule_text">{children}</div>}
+      <div className={'rule_text_container' + (open ? ' open' : '')}>
+        <div className="rule_text">{children}</div>
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import '../../Utils/style-page/index.css'
+import './accommodation.scss'
 import accommodations from '../../assets/Datas/logements.json'
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'

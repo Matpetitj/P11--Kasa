@@ -1,4 +1,4 @@
-import '../../Utils/style-page/index.css'
+import './cards.scss'
 
 export default function Card({ cover, title, alt }) {
   return (
